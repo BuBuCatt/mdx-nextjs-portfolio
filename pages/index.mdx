@@ -1,5 +1,27 @@
+import Image from 'next/image'
+import icon from '../public/hi-icon.png'
 
-# Home
+<div style={{ display: 'flex', alignItems: 'center', fontWeight:'bold' }}>
+  <h1 style={{ margin: 0,  fontSize: '35px' }}>Hi ! </h1>
+  <Image src={icon} alt="web" width={24} height={24} style={{ marginLeft: '8px' }} />
+</div>
 
-Welcome to my professional portfolio! 
-Here you will find information about my background, education, work experience, skills, and projects.
+
+<p>I am ChiaYu Hsu , Kristen <br /></p>
+<p>Here you will find information about my background, education, work experience, skills, and projects. <br /> </p>
+
+<div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+  <div style={{ maxWidth: '500px' }}>
+    <Image
+      src="/IMG_3745.JPG"
+      alt="me"
+      width={500}
+      height={500}
+      style={{
+        borderRadius: '20px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+        border: '2px solid #ddd'
+      }}
+    />
+  </div>
+</div>
