@@ -1,17 +1,30 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import Image from 'next/image'
+import Logo from './public/icon-cat-pc.png'
+import CustomIcon from './public/coding.png'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+
+  logo: (
+    <span style={{ display: 'flex', alignItems: 'center' }}>
+      <Image src={Logo} alt="Chia-Yu Hsu Logo" width={40} height={40} />
+      <span style={{ marginLeft: '10px', fontWeight:"bold" }}>ChiaYu Hsu - Software Developer</span>
+    </span> 
+  ),
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/BuBuCatt',
   },
+  
   chat: {
-    link: 'https://discord.com',
+    link: 'https://kristen-portfolio-nextjs.vercel.app/',
+    icon:(
+      <Image src={CustomIcon} alt="web" width={24} height={24} />
+    )
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/BuBuCatt',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Chia-Yu Hsu © 2024'
   },
 }
 

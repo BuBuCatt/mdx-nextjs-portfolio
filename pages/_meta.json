@@ -1,9 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Home",
+  "introduction": "Introduction",
+  "education": "Education",
+  "experience": "Experience",
+  "skills": "Skills",
+  "projects": "Projects",
+
+
   "about": {
     "title": "About",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Blog",
     "type": "page"
   },
   "contact": {
